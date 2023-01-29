@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+    <title>CodePen - responsive image map demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            font-weight: bold;
+            font-size: 8vw;
+            background-color: #b1adde;
+            color: #267;
+        }
+        
+        .container {
+            margin: 20px auto 0;
+            position: relative;
+            width: 90%;
+        }
+        
+        .shapes {
+            margin: 0 auto;
+            width: 90%;
+        }
+        
+        img[usemap] {
+            border: none;
+            height: auto;
+            max-width: 100%;
+            width: auto;
+        }
+        
+        p {
+            margin: 0;
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+    <div class="container">
+
+        <div class="shapes">
+            <img src="Geometric-Shapes-Names.png" usemap="#Map" />
+
+            <map name="Map" id="Map">
+      <area shape="rect" coords="441,156,632,272" alt="Rectangle" href="#"  class = "Rectangle">
+      <area shape="circle" coords="83,211,70" alt="Circle" href="#" class = "Circle"> 
+      <area shape="poly" coords="285,141,368,274,201,272" alt="Triangle" href="https://en.wikipedia.org/wiki/Triangle">
+      <area shape="poly" coords="752,393,770,375,798,367,829,385,821,430,753,487,691,435,679,401,692,372,725,368" alt="Heart" href="https://en.wikipedia.org/wiki/Heart">
+      <area shape="poly" coords="324,547,381,693,365,705,325,712,285,707,263,693" alt="Cone" href="https://en.wikipedia.org/wiki/Cone">
+      <area shape="poly" coords="" alt="Right Triangle" href="https://en.wikipedia.org/wiki/Right_triangle">
+      <area shape="poly" coords="752,274,725,271,698,261,680,249,668,232,665,216,669,197,683,179,705,164,732,158,755,156,784,160,803,167,824,183,835,200,838,215,832,236,818,252,800,263,776,272,756,274" alt="Ellipse" href="https://en.wikipedia.org/wiki/Ellipse">
+      <area shape="poly" coords="18, 357, 155, 487" alt="Square" href="https://en.wikipedia.org/wiki/Square">
+      <area shape="poly" coords="229, 766, 378, 844, 299, 921, 220, 843" alt="Rhombus" href="https://en.wikipedia.org/wiki/Rhombus">
+      <area shape="poly" coords="461, 378, 640, 378, 434, 486, 613, 486" alt="Parallelogram" href="https://en.wikipedia.org/wiki/Parallelogram">
+      <area shape="rect" coords="26, 613, 5636, 209, 616, 187, 635, 4, 705, 186, 705, 210, 682" alt="Rectangular Prism" href="https://en.wikipedia.org/wiki/Cuboid#Rectangular_cuboid">
+      <area shape="poly" coords="460, 570, 604, 570, 459, 692, 604, 690" alt="Cylinder" href="https://en.wikipedia.org/wiki/Cylinder">
+      <area shape="poly" coords="775, 564, 663, 618, 804, 617, 691, 705, 779, 705" alt="Star" href="https://en.wikipedia.org/wiki/Star">
+      <area shape="poly" coords="45, 801, 151, 802, 11, 918, 185, 917" alt="Trapezoid" href="https://en.wikipedia.org/wiki/Trapezoid">
+      <area shape="poly" coords="435, 822, 468, 787, 546, 821, 579, 788, 580, 885, 434, 918, 545, 917" alt="Cube" href="https://en.wikipedia.org/wiki/Cube">
+      <area shape="poly" coords="714, 768, 638, 826, 789, 826, 667, 918, 760, 918" alt="Pentagon" href="https://en.wikipedia.org/wiki/Pentagon">
+      <area shape="poly" coords="57, 986, 25, 1050, 143, 987, 56, 1113, 142, 1114" alt="Hexagon" href="https://en.wikipedia.org/wiki/Hexagon">
+      <area shape="poly" coords="291, 992, 226, 1017, 210, 1070, 371, 1070, 355, 1017, 253, 1112, 326, 1113" alt="Heptagon" href="https://en.wikipedia.org/wiki/Heptagon">
+      <area shape="poly" coords="451, 998, 417, 1034, 415, 1080, 567, 1033, 566, 1081, 568, 1033, 451, 1115, 535, 1115" alt="Octagon" href="https://en.wikipedia.org/wiki/Octagon">
+      <area shape="poly" coords="699, 983, 656, 1008, 641, 1047, 790, 1009, 805, 1046, 656, 1089, 791, 1087, 749, 983, 699, 1113, 748, 1111" alt="Decagon" href="https://en.wikipedia.org/wiki/Decagon">
+    
+
+    </map>
+        </div>
+
+    </div>
+
+    <div class="selection">
+        <p>click a brick</p>
+    </div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://res.cloudinary.com/positionrelativ/raw/upload/v1492377595/jquery.rwdImageMaps_lq5sye.js'></script>
+    <script id="rendered-js">
+        // * img coords generated with 
+        // http://imagemap-generator.dariodomi.de/
+
+        // * made responsive with
+        // https://github.com/stowball/jQuery-rwdImageMaps
+
+
+
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+
+            $('area').on('focus', function(e) {
+                e.preventDefault();
+                $('.selection p').html($(this).attr('class'));
+            });
+
+            $(document).on('click', function(e) {
+                e.preventDefault();
+                if ($(e.target).closest('area').length === 0) {
+                    $('.selection p').html('click a brick');
+                }
+            });
+
+
+
+        });
+        //# sourceURL=pen.js
+    </script>
+
+
+
+</body>
+
+</html>

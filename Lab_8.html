@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/style.css">
+    <script src="js/includeHtml.js"></script>
+</head>
+
+<body>
+
+    <!-- Note -->
+    <div style="background:yellow;padding:5px">
+        <h4 style="text-align:center">This is the page that contains a responsive table.</h4>
+    </div>
+
+    <!-- Header -->
+    <!--include header start-->
+    <div w3-include-html="index_header.html"></div>
+    <!--include header end-->
+
+
+
+    <!--include Navigation Bar start-->
+    <div w3-include-html="navigation_bar.html"></div>
+    <!--include Navigation Bar end-->
+
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <!--side-->
+        <div class="side">
+            <!--include side start-->
+            <div w3-include-html="side.html"></div>
+            <!--include side end-->
+        </div>
+        <div class="main" style="background-image: url(images/rain.gif); background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
+
+            <h2>This is Lab 8</h2>
+            <h5>We used the code from a link to create a responsive table with data of our own.</h5>
+
+            <div class="background_images">
+
+            </div>
+
+            <!-- My lab content start-->
+
+
+            <table>
+                <caption>Artist Summary</caption>
+                <thead>
+                    <tr>
+                        <th scope=" col ">Company</th>
+                        <th scope="col ">Band</th>
+                        <th scope="col ">Training Cost</th>
+                        <th scope="col ">Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Company ">Hybe</td>
+                        <td data-label="Band ">TXT</td>
+                        <td data-label="Training Cost ">$27,000</td>
+                        <td data-label="Period ">05/04/2013- 07/15/2016</td>
+                    </tr>
+                    <tr>
+                        <td scope="row " data-label="Company "> RBW Entertainment</td>
+                        <td data-label="Band ">Mamamoo</td>
+                        <td data-label="Training Cost ">$23,000</td>
+                        <td data-label="Period ">10/13/2015 - 12/31/2016</td>
+                    </tr>
+                    <tr>
+                        <td scope="row " data-label="Company ">KQ Entertainment</td>
+                        <td data-label="Band ">Ateez</td>
+                        <td data-label="Training Cost ">$30,000</td>
+                        <td data-label="Period ">01/12/2017 - 03/12/2018</td>
+                    </tr>
+                    <tr>
+                        <td scope="row " data-label="Company ">YG</td>
+                        <td data-label="Band ">Black Pink</td>
+                        <td data-label="Training Cost ">$25,000</td>
+                        <td data-label="Period ">07/31/2018 - 03/09/2019</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <style>
+                table {
+                    border: 1px solid #ccc;
+                    border-collapse: collapse;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+                
+                table caption {
+                    font-size: 1.5em;
+                    margin: 0.5em 0 0.75em;
+                }
+                
+                table tr {
+                    background-color: #f8f8f8;
+                    border: 1px solid #ddd;
+                    padding: 0.35em;
+                }
+                
+                table th,
+                table td {
+                    padding: 0.625em;
+                    text-align: center;
+                }
+                
+                table th {
+                    font-size: 0.85em;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                }
+                
+                @media screen and (max-width: 600px) {
+                    table {
+                        border: 0;
+                    }
+                    table caption {
+                        font-size: 1.3em;
+                    }
+                    table thead {
+                        border: none;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+                    }
+                    table tr {
+                        border-bottom: 3px solid #ddd;
+                        display: block;
+                        margin-bottom: 0.625em;
+                    }
+                    table td {
+                        border-bottom: 1px solid #ddd;
+                        display: block;
+                        font-size: 0.8em;
+                        text-align: right;
+                    }
+                    table td::before {
+                        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+                        content: attr(data-label);
+                        float: left;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    table td:last-child {
+                        border-bottom: 0;
+                    }
+                }
+                /* general styling */
+                
+                body {
+                    font-family: "Open Sans", sans-serif;
+                    line-height: 1.25;
+                }
+            </style>
+            <!-- My lab content end-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!--include footer start-->
+    <div w3-include-html="footer.html "></div>
+    <!--include footer end-->
+
+</body>
+<script>
+    (function documentReady() {
+        includeHTML();
+    })();
+</script>
+
+
+
+</html>

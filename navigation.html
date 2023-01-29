@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/style.css">
+    <script src="js/includeHtml.js"></script>
+</head>
+
+<body>
+
+    <!-- Note -->
+    <div style="background:yellow;padding:5px">
+        <h4 style="text-align:center">The content page of Labs 1 - 8.</h4>
+    </div>
+
+    <!-- Header -->
+    <!--include header start-->
+    <div w3-include-html="index_header.html"></div>
+    <!--include header end-->
+
+
+
+    <!--include Navigation Bar start-->
+    <div w3-include-html="navigation_bar.html"></div>
+    <!--include Navigation Bar end-->
+
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <!--side-->
+        <div class="side">
+            <!--include side start-->
+            <div w3-include-html="side.html"></div>
+            <!--include side end-->
+        </div>
+        <div class="main" style="background-image: url(images/intro.jpg); background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
+
+
+
+            <div class="background_images">
+
+            </div>
+
+            <!-- My lab content start-->
+
+            <h2 style="color:#FFF">Lab Contents:</h2>
+
+            <h5 style="color:#FFF">Lab 1</h5>
+            <p style="color:#FFF">1st HTML Page</p>
+
+
+            <h5 style="color:#FFF">Lab 2</h5>
+            <p style="color:#FFF">Yahoo & Google</p>
+
+
+            <h5 style="color:#FFF">Lab 3</h5>
+            <p style="color:#FFF">Zen Tokyo Zoo</p>
+
+
+            <h5 style="color:#FFF">Lab 4</h5>
+            <p style="color:#FFF">Footer & Header</p>
+
+
+            <h5 style="color:#FFF">Lab 5</h5>
+            <p style="color:#FFF">Transparent background </p>
+
+
+            <h5 style="color:#FFF">Lab 6</h5>
+            <p style="color:#FFF">Frame</p>
+
+
+            <h5 style="color:#FFF">Lab 7</h5>
+            <p style="color:#FFF">Image Map</p>
+
+
+            <h5 style="color:#FFF">Lab 8</h5>
+            <p style="color:#FFF">Responsive Table</p>
+
+
+
+
+
+            <!-- My lab content end-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!--include footer start-->
+    <div w3-include-html="footer.html"></div>
+    <!--include footer end-->
+
+</body>
+<script>
+    (function documentReady() {
+        includeHTML();
+    })();
+</script>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/style.css">
+    <script src="js/includeHtml.js"></script>
+</head>
+
+<body>
+
+    <!-- Note -->
+    <div style="background:yellow;padding:5px">
+        <h4 style="text-align:center">Some facts about myself.</h4>
+    </div>
+
+    <!-- Header -->
+    <!--include header start-->
+    <div w3-include-html="index_header.html"></div>
+    <!--include header end-->
+
+
+
+    <!--include Navigation Bar start-->
+    <div w3-include-html="navigation_bar.html"></div>
+    <!--include Navigation Bar end-->
+
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <!--side-->
+        <div class="side">
+            <!--include side start-->
+            <div w3-include-html="side.html"></div>
+            <!--include side end-->
+        </div>
+
+        <div class="main" style="background-color: aliceblue;">
+
+
+
+            <div class=""></div>
+            <h2>H1gher Music Records</h2>
+            <h5>Photo of H1gher Company Logo:</h5>
+            <img src="images/H1ghr_Music.png" alt=w idth: 200px height="300">
+            </img>
+            <img src="images/Jay & Cha Cha.jpg" alt=w idth: 200px height="300">
+            </img>
+
+            <p><b>Founders of H1gher Music:</b></p>
+            <p>Jay Park and Chase Malone</p>
+            <p>Founded in June 2017</p>
+            <p><a href="http://h1ghrmusicofficial.com/"> Visit H1gherMusicOfficial.com</a></p>
+            <p style="line-height:1.8em;"> <b>Some facts about the company:</b></p>
+            <ul>
+                <li>Are a global hip-hop label</li>
+                <li>Have an international network formed mainly in Seattle and Seoul</li>
+                <li>11 artists from Seoul, Korea</li>
+                <li>5 artists from U.S.</li>
+                <li>Concerts while on global tours</li>
+                <li>Each artist has total freedom with their music</li>
+                <li>Artists are encouraged to be creative with their work</li>
+                <li>The contract for an artist usually is for 3 months</li>
+            </ul>
+
+
+
+            <br>
+
+
+            <h2>Red and Blue Tapes:</h2>
+            <p>This is their album compilation.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3Ac8tQC_Ws4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+            <div class=""></div>
+            <img src="images/Red and Blue Tape.PNG" alt=w idth: 200px height="300">
+            <p><b>Facts about these tapes:</b></p>
+            <ul>
+                <li>There are documentaries about both tapes</li>
+                <li>Red tape is EP 1: Welcome to the Family</li>
+                <li>BLue tape is EP 2: Commentary</li>
+                <li>All of the artists from the company made this album compilation togther</li>
+                <li>Two new artists named; Big Naughty and Trade L are the youngest members being only 17 and 16 yrs. old</li>
+                <li>The artists are all like one big family to one another</li>
+                <li>The most experienced artists help mentor the youngest ones</li>
+
+                <p>These are the documentaries of the red and blue tape</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PJ09qZdO4LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1-ljk1DqVx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!--include footer start-->
+    <div w3-include-html="footer.html"></div>
+    <!--include footer end-->
+
+</body>
+<script>
+    (function documentReady() {
+        includeHTML();
+    })();
+</script>
+
+</html>

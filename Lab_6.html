@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/style.css">
+    <script src="js/includeHtml.js"></script>
+</head>
+
+<body>
+
+    <!-- Note -->
+    <div style="background:yellow;padding:5px">
+        <h4 style="text-align:center">The Framed rose.</h4>
+    </div>
+
+    <!-- Header -->
+    <!--include header start-->
+    <div w3-include-html="index_header.html"></div>
+    <!--include header end-->
+
+
+
+    <!--include Navigation Bar start-->
+    <div w3-include-html="navigation_bar.html"></div>
+    <!--include Navigation Bar end-->
+
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <!--side-->
+        <div class="side">
+            <!--include side start-->
+            <div w3-include-html="side.html"></div>
+            <!--include side end-->
+        </div>
+        <div class="main" style="background-image: url(images/petals.gif); background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
+            <h2>This is Lab 6</h2>
+            <h5>We used an image to fit it inside of a frame.</h5>
+
+
+            <div class="background_images">
+
+            </div>
+
+
+
+            <!-- My lab content start-->
+
+
+
+
+            <h1>The border-image-slice Property</h1>
+            <div id="borderimg"></div>
+
+
+
+
+
+
+
+
+
+
+            <!-- My lab content end-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!--include footer start-->
+    <div w3-include-html="footer.html "></div>
+    <!--include footer end-->
+
+
+
+
+</body>
+<script>
+    (function documentReady() {
+        includeHTML();
+    })();
+</script>
+<style>
+    #borderimg {
+        height: 169px;
+        width: 297px;
+        border: 20px solid transparent;
+        padding: 0px;
+        border-image: url("images/frame.png") stretch;
+        background-image: url("images/rose.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-image-slice: 20%;
+    }
+</style>
+
+</html>

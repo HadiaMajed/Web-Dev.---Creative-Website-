@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+@font-face {
+   font-family: zenTokyoZoo;
+   src: url(ZenTokyoZoo-Regular.ttf); 
+}
+*{
+    font-family: myFirstfont;
+    color: #0000FF88 
+}
+p{
+    font-family: zenTokyoZoo;
+    font-size: 60px; 
+    color: hsl(0,50%,50%);
+}
+ 
+
+ b{
+     color: rgb(0,255,0);
+ }
+
+body > p > b:nth-child(2){
+    color: orange;
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<h1>The @font-face Rule</h1> 
+
+<div>
+With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+</div>
+
+<p><b>Note:</b> Internet <b> Explorer 8 </b> and earlier, do not support the <span>@font-face rule</span>.</p>
+</body>
+</html>
